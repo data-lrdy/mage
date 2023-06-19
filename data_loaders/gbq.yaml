@@ -1,0 +1,4 @@
+config:
+  path_to_credentials_json_file: /home/secrets/charming-sonar-346314-90cd9e0f3b0a.json
+  dataset: dbt_prod
+source: bigquery

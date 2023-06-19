@@ -1,0 +1,29 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: yaml
+  name: GBQ
+  retry_config: null
+  status: updated
+  type: data_loader
+  upstream_blocks: []
+  uuid: gbq
+callbacks: []
+conditionals: []
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: wispy lake
+spark_config: {}
+type: integration
+updated_at: '2023-06-19 20:36:40'
+uuid: wispy_lake
+widgets: []

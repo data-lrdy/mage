@@ -1,0 +1,76 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: blue
+  configuration: {}
+  downstream_blocks:
+  - wispy_river
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: green river
+  retry_config: null
+  status: executed
+  type: custom
+  upstream_blocks: []
+  uuid: green_river
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: wispy river
+  retry_config: null
+  status: executed
+  type: transformer
+  upstream_blocks:
+  - green_river
+  - dark_pond
+  uuid: wispy_river
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - wispy_river
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: dark pond
+  retry_config: null
+  status: updated
+  type: data_loader
+  upstream_blocks: []
+  uuid: dark_pond
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    file_path: null
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: yaml
+  name: gbq
+  retry_config: null
+  status: not_executed
+  type: data_loader
+  upstream_blocks: []
+  uuid: gbq
+callbacks: []
+conditionals: []
+data_integration: null
+description: null
+executor_config: {}
+executor_count: 1
+executor_type: null
+extensions: {}
+name: little glade
+spark_config: {}
+type: python
+updated_at: '2023-06-19 21:09:02'
+uuid: little_glade
+widgets: []
